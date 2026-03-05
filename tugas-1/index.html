@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Ahnaf Tsabit Attaqi - Tugas Pemrograman Web</title>
+    <style>
+        /* Base */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f0f2f5; }
+        .container { max-width: 900px; margin: 30px auto; background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        
+        /* Header dengan Flexbox untuk Foto */
+        header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-start; 
+            border-bottom: 3px solid #0056b3; 
+            padding-bottom: 20px; 
+            margin-bottom: 25px; 
+        }
+        .header-text { flex: 1; padding-right: 20px; }
+        .profile-img { 
+            width: 150px; /* Ukuran tampilan di web (bisa disesuaikan) */
+            height: auto; 
+            border-radius: 8px; 
+            border: 2px solid #0056b3;
+            object-fit: cover;
+        }
+
+        h1 { margin: 0; color: #0056b3; font-size: 2.2em; text-transform: uppercase; }
+        .contact-info { margin-top: 10px; font-size: 0.9em; color: #555; }
+        .contact-info a { color: #0056b3; text-decoration: none; }
+
+        /* Section Styling */
+        section { margin-bottom: 25px; }
+        h2 { border-left: 5px solid #0056b3; padding-left: 10px; font-size: 1.4em; color: #333; text-transform: uppercase; margin-bottom: 15px; }
+        
+        /* List Styling */
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .job-title { font-weight: bold; font-size: 1.1em; color: #222; }
+        .date-location { font-style: italic; color: #666; font-size: 0.9em; float: right; }
+        
+        /* Skills Grid */
+        .skills-container { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; }
+        .skill-tag { background: #e7f1ff; color: #0056b3; padding: 5px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; border: 1px solid #b3d1ff; }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            header { flex-direction: column-reverse; align-items: center; text-align: center; }
+            .header-text { padding-right: 0; margin-top: 15px; }
+            .date-location { float: none; display: block; margin-bottom: 5px; }
+            .container { padding: 20px; margin: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-text">
+            <h1>Ahnaf Tsabit Attaqi</h1>
+            <div class="contact-info">
+                Purwokerto, Jawa Tengah | +62 896-6938-9430 | <br>
+                <a href="mailto:abidattaqi12@gmail.com">abidattaqi12@gmail.com</a><br>
+                LinkedIn: <a href="https://www.linkedin.com/in/ahnaf-tsabit-attaqi-93b0b0308/">ahnaf-tsabit-attaqi</a> | 
+                GitHub: <a href="https://github.com/atsaqi">@atsaqi</a>
+            </div>
+        </div>
+        <img src="foto-kamu.jpg" alt="Foto Ahnaf Tsabit Attaqi" class="profile-img" width="276" height="365">
+    </header>
+
+    <section>
+        <h2>Ringkasan</h2>
+        <p>Mahasiswa Teknik Rekayasa Kecerdasan Artifisial di Institut Teknologi Sepuluh Nopember (ITS) yang mempelajari di antaranya Machine Learning, Data Science, dan Computer Vision. Tertarik pada implementasi AI dan pemrosesan bahasa alami (NLP).</p>
+    </section>
+
+    <section>
+        <h2>Pendidikan</h2>
+        <div>
+            <span class="date-location">Agt 2023 – Sekarang</span>
+            <p class="job-title">Institut Teknologi Sepuluh Nopember (ITS)</p>
+            <p>Sarjana Teknik Rekayasa Kecerdasan Artifisial (B.Eng) </p>
+            <ul>
+                <li>Mata Kuliah Terkait: Machine Learning, Deep Learning, NLP, Computer Vision, Probabilitas & Statistika.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Proyek & Pengalaman Akademik</h2>
+        <div>
+            <span class="date-location">2023 – Sekarang</span>
+            <p class="job-title">Peneliti & Pengembang AI</p>
+            <ul>
+                <li><strong>Klasifikasi Kategori Sampah:</strong> Mengembangkan model CNN untuk otomatisasi klasifikasi gambar sampah organik dan anorganik.</li>
+                <li><strong>Implementasi Machine Learning:</strong> Melakukan tuning hiperparameter menggunakan Scikit-Learn dan TensorFlow.</li>
+                <li><strong>Exploratory Data Analysis (EDA):</strong> Pembersihan dan visualisasi data untuk mendapatkan wawasan dari dataset mentah.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Keahlian</h2>
+        <ul class="skills-container">
+            <li class="skill-tag">Python (Advanced)</li>
+            <li class="skill-tag">SQL & Java</li>
+            <li class="skill-tag">TensorFlow & PyTorch</li>
+            <li class="skill-tag">Scikit-Learn</li>
+            <li class="skill-tag">Git/GitHub</li>
+            <li class="skill-tag">Machine Learning</li>
+            <li class="skill-tag">Computer Vision</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Organisasi</h2>
+        <div>
+            <span class="date-location">2024 – Sekarang</span>
+            <p class="job-title">FORMASITS (Forum Mahasiswa Banyumas ITS)</p>
+            <ul>
+                <li>Berkontribusi dalam operasional dan pelaksanaan acara mahasiswa daerah.</li>
+                <li>Mengelola logistik dan hubungan masyarakat untuk program penjangkauan kampus.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Bahasa</h2>
+        <ul>
+            <li>Indonesia (Native) </li>
+            <li>Inggris (Professional Working Proficiency) </li>
+        </ul>
+    </section>
+</div>
+
+</body>
+</html>
