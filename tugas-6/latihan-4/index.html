@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Dropdown Dinamis</title>
+</head>
+<body>
+    <li><a href="..\index.html">Tugas 6 Pweb</a></li>
+
+    <hr>
+    
+    <h3>Latihan 4: List Dropdown Dinamis</h3>
+
+    <label>Pilih Fakultas:</label>
+    <select id="fakultas" onchange="updateProdi()">
+        <option value="">-- Pilih Fakultas --</option>
+        <option value="FT">Fakultas Teknik</option>
+        <option value="FE">Fakultas Ekonomi</option>
+    </select>
+
+    <br><br>
+
+    <label>Pilih Prodi:</label>
+    <select id="prodi">
+        <option value="">-- Pilih Fakultas Dulu --</option>
+    </select>
+    
+    <script src="updateProdi.js"></script>
+</body>
+</html>

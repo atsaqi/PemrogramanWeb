@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1: Form</title>
+</head>
+<body>
+    <li><a href="..\index.html">Tugas 6 Pweb</a></li>
+
+    <hr>
+    
+    <h3>Latihan 1: Form</h3>
+
+    <form id="formRegistrasi">
+        <label>Nama Mahasiswa:</label><br>
+        <input type="text" id="nama" list="rekomendasiNama">
+        <datalist id="rekomendasiNama">
+            <option value="Agus"></option>
+            <option value="Bambang"></option>
+            <option value="Cici"></option>
+            <option value="Dedi"></option>
+            <option value="Eko"></option>
+            <option value="Fajar"></option>
+            <option value="Gilang"></option>
+            <option value="Hadi"></option>
+            <option value="Indah"></option>
+            <option value="Joko"></option>
+            <option value="Kiki"></option>
+            <option value="Laras"></option>
+            <option value="Made"></option>
+            <option value="Nanang"></option>
+            <option value="Oki"></option>
+            <option value="Putu"></option>
+            <option value="Qori"></option>
+            <option value="Rian"></option>
+            <option value="Siti"></option>
+            <option value="Tono"></option>
+            <option value="Ujang"></option>
+            <option value="Vina"></option>
+            <option value="Wawan"></option>
+            <option value="Xavier"></option>
+            <option value="Yanto"></option>
+            <option value="Zaki"></option>
+        </datalist>
+        <br><br>
+
+        <label>NIM:</label><br>
+        <input type="number" id="nim"><br><br>
+
+        <label>Mata Kuliah:</label><br>
+        <input type="text" id="matkul"><br><br>
+
+        <label>Dosen:</label><br>
+        <input type="text" id="dosen"><br><br>
+
+        <button type="button" onclick="simpanData()">Daftar</button>
+    </form>
+
+    <script src="simpanData.js"></script>
+</body>
+</html>
