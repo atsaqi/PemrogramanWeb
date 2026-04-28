@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETS News</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <my-header></my-header>
+
+    <news-filter id="filter-berita"></news-filter>
+
+    <div class="container">
+        <div id="news-container">
+            <news-item 
+                category="Teknologi" 
+                title="Robot Humanoid Kini Mulai Bekerja di Pabrik Mobil" 
+                content="Generasi terbaru robot humanoid mulai diuji coba untuk membantu perakitan pintu mobil secara presisi. Robot ini diklaim mampu bekerja 24 jam tanpa henti dengan tingkat kesalahan mendekati nol persen." 
+                img="https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=400">
+            </news-item>
+
+            <news-item 
+                category="Olahraga" 
+                title="Persiapan Timnas Jelang Laga Kualifikasi Pekan Depan" 
+                content="Pelatih mengonfirmasi bahwa seluruh pemain kunci dalam kondisi bugar. Strategi baru akan diterapkan untuk menghadapi lawan yang memiliki pertahanan sangat rapat di pertandingan tandang nanti." 
+                img="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400">
+            </news-item>
+
+            <news-item 
+                category="Hiburan" 
+                title="Konser Musik Dunia Akan Digelar di Jakarta Bulan Depan" 
+                content="Promotor resmi mengumumkan jadwal tur Asia untuk grup band legendaris ini. Penjualan tiket akan dibuka mulai hari Jumat dengan sistem antrean online yang lebih ketat untuk menghindari calo." 
+                img="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=400">
+            </news-item>
+
+            <news-item 
+                category="Politik" 
+                title="Rencana Pembangunan Taman Kota di Pusat Bisnis" 
+                content="Pemerintah daerah mengalokasikan dana segar untuk memperluas ruang terbuka hijau. Proyek ini diharapkan bisa menurunkan suhu udara di perkotaan sekaligus menjadi tempat rekreasi warga yang gratis." 
+                img="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=400">
+            </news-item>
+
+            <news-item 
+                category="Teknologi" 
+                title="Gadget Lipat Generasi Terbaru Makin Tipis dan Kuat" 
+                content="Inovasi material engsel baru membuat ponsel lipat tahun ini tidak lagi memiliki celah saat ditutup. Daya tahan layarnya pun meningkat drastis dibandingkan model tahun lalu." 
+                img="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400">
+            </news-item>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../components/header.js"></script>
+    <script src="../components/main.js"></script>
+    <script src="../components/news-filter.js"></script>
+    <script src="../components/news.js"></script>
+</body>
+</html>
